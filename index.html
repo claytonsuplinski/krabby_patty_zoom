@@ -1,0 +1,48 @@
+<html>
+
+<head>
+	<title>Krabby Patty Zoom</title>
+	
+	<script src="./jquery.min.js"></script>
+
+	<style>
+		html{
+			background:#000;
+		}
+
+		#background{
+			position:fixed;
+			top:0;
+			left:0;
+			right:0;
+			bottom:0;
+			margin:auto;
+			height:100vh;
+		}
+
+		#krabby-patty{
+			position:fixed;
+			top:0;
+			left:0;
+			right:0;
+			bottom:0;
+			margin:auto;
+			height:auto;
+		}
+	</style>
+</head>
+
+<body>
+	<audio src="audio.mp3" autoplay></audio>
+	<img id="background" src="krabby_patty_background.jpg" />
+	<img id="krabby-patty" src="seattle_hamburger.png" />
+</body>
+
+<script>
+$( '#krabby-patty' ).css({ width : 0 });
+setTimeout(function(){
+	$( '#krabby-patty' ).animate({ width : 287 }, 33000 );
+}, 3000 );
+</script>
+
+</html>
